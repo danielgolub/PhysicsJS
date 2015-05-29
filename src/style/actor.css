@@ -1,0 +1,8 @@
+/**
+ * Style of rendered actor
+ */
+
+.Actor {
+	background: red;
+	position: absolute;
+}
