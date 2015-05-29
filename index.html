@@ -31,20 +31,20 @@
 			// define a new force - hand push - constant force
 			var handPush = new Vector(0, 3);
 			// another force that lasts 5 miliseconds
-			var anotherForce = new Vector(1, 0, 50);
+			var anotherForce = new Vector(1, 0, 1);
 
 			// mass, 1000gram = 1kg
 			var mass = new Mass(1000, 'g');
 
 			// new "Actor" - atom
-			var actor = new Actor("player", mass, [handPush, anotherForce], [-50, 0], [0, 0], [0, 0]);
-			actor.run(function() {  }, 50); // run the actor movement per 1 milisecond
+			var actor = new Actor("player", mass, [handPush, anotherForce], [-70, 0], [0, 0], [0, 0]);
+			actor.run(function() {  }, 1); // run the actor movement per 1 milisecond
 
 			// another force for new actir
 			var push = new Vector(0, 10.5, 1);
 			// new actor with the same mass
 			var actor2 = new Actor("player2", mass, [push], [10, 20], [0, 0], [0, 0]);
-			actor2.run(function() {  }, 50) // observe scene per 1 milisecond
+			actor2.run(function() {  }, 1) // observe scene per 1 milisecond
 		</script>
 	</body>
 </html>
